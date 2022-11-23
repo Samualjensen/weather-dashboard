@@ -5,32 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
     <!-- link to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
     <!-- css stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body class="body">
+
     <!-- header -->
     <header class="header">
         <div class="h1-container d-flex translate-middle bg-dark justify-content-center">
             <h1 class="h1 text-light">Weather Dashboard</h1>
         </div>
+
     </header>
 
-    
+    <!-- top of search bar -->
+    <div class="container-fluid-maincon">
+        <div class="row">
+            <div class="col-12 col-md-3 col-xl-3 colOne">
 
+                <!-- search bar title -->
+                <label>Search for a city:</label>
 
-    <!-- src for jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- scr for script.js -->
-    <script src="./assets/js/script.js"></script>
+                <!-- search bar section -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control textVal" placeholder="Portland...">
+                    <div class="input-group-append btnPar">
+                        <button class="btn btn-primary search" type="button" id="button-addon2">🔎<i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <!-- search history -->
+                <div class="container cityHistory"></div>
+
+                <div class="col-12 col-md-9 col-xl-9 colTwo"></div>
+
+                <!-- card for today's weather -->
+                <div class="row today">
+
+                    <!-- cards for upcoming day's weather -->
+                    <div class="card bg-light mb-3" style="max-width: 400px;">
+                        <h2 class="card-header cardTodayCityName"></h2>
+                        <h3 class="card-header cardTodayDate"></h3>
+                        <img class="icons"></img>
+                        <div class="card-body cardBodyToday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row fiveDayForcast"></div>
+
+                <!-- src for jquery -->
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                <!-- scr for script.js -->
+                <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

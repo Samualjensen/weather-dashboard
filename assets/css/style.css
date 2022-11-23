@@ -1,4 +1,66 @@
-body {
+/* universal properties */
+* {
     font-family: 'Nanum Gothic Coding', monospace;
+}
+
+/* heading properties */
+/* .h1-container {
+    background-color: ;
+} */
+
+/* search for city */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* today's weather card */
+.card {
+    margin: 10px;
+}
+
+/* search bar area */
+.colOne {
     background-color: white;
+}
+
+/* .colTwo {
+    background-color: ;
+} */
+
+.histBtnRow {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+/* today's date */
+.cardTodayDate {
+    font-size: 20px;
+}
+
+/* weather icons */
+.icons {
+    height: 70px;
+    width: 70px;
 }
