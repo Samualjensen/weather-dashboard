@@ -4,7 +4,7 @@
 
 ## Links
 
-Link to live url:
+Link to live url: https://samualjensen.github.io/weather-dashboard/
 
 Link to reposistory: https://github.com/Samualjensen/weather-dashboard
 
