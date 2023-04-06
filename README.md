@@ -16,7 +16,7 @@ No installation needed, simply use the url above and search for a cities weather
 
 When the webpage is deployed it can be viewed normally on a standard desktop browser. It has been modified to fit a smaller screen.
 
-![img](/assets/images/)
+![img](/assets/images/samualjensen.github.io_weather-dashboard_.png)
 
 ## License
 
