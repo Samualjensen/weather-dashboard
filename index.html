@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- bootstrap stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-
-    <!-- link to google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-
-    <!-- css stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Weather Dashboard</title>
-</head>
-
-<body class="body">
-
-    <!-- header -->
-    <header class="header">
-        <div class="h1-container d-flex translate-middle justify-content-center">
-            <h1 class="h1 text-light">Weather Dashboard</h1>
-        </div>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Weather Dashboard</h1>
+      </div>
     </header>
 
-    <!-- top of search bar -->
-    <div class="container-fluid-maincon">
-        <div class="row">
-            <div class="col-12 col-md-3 col-xl-3 colOne">
+    <main>
+      <div class="search">
+        <h5>Search for City</h5>
 
-                <!-- search bar title -->
-                <label class="label text-light">Search for a city:</label>
-
-                <!-- search bar section -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control textVal" placeholder="Portland...">
-                    <div class="input-group-append btnPar">
-                        <button class="btn btn-primary search" type="button" id="button-addon2">🔎<i
-                                class="fas fa-search"></i></button>
-                    </div>
-                </div>
-
-                <!-- search history -->
-                <div class="container cityHistory"></div>
-
-                <div class="col-12 col-md-9 col-xl-9 colTwo"></div>
-
-                <!-- card for today's weather -->
-                <div class="row today">
-
-                    <!-- cards for upcoming day's weather --> -->
-                    <div class="card bg-light mb-3" style="max-width: 400px;">
-                        <h2 class="card-header cardTodayCityName"></h2>
-                        <h3 class="card-header cardTodayDate"></h3>
-                        <img class="icons"></img>
-                        <div class="card-body cardBodyToday">
-                        </div>
-                    </div>
-                </div>
-                <div class="row fiveDayForcast"></div>
-
-                <!-- src for day.js -->
-                <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-                    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-
-                <!-- src for jquery -->
-                <script src="https: //code.jquery.com/jquery-3.5.1.min.js"
-                    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
-                    </script>
-
-                <!-- scr for script.js -->
-                <script src="./assets/js/script.js"></script>
-</body>
-
+        <form class="inputGroup">
+          <input
+            id="searchItem"
+            type="text"
+            class="formController"
+            placeholder="City name"
+            class="input-group-append"
+          />
+          <button
+            id="searchBtn"
+            class="searchBtnPrimary"
+            type="submit"
+            id="buttonAddon"
+          >
+            Go!
+          </button>
+        </form>
+      <div id="button-container">
+        
+      </div>
+      </div>
+      <div class="weather">
+        <div class="current"></div>
+        <div class="forecast">
+          <div class="card">
+            <h3>Day</h3>
+            <p>Icon</p>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Icon</p>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Icon</p>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Icon</p>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Icon</p>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Assets/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
